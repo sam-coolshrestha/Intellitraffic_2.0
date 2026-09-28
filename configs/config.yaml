@@ -1,0 +1,34 @@
+# IntelliTraffic AI configuration. The dashboard sidebar can override these.
+model:
+  weights: models/yolov8n.pt      # auto-downloads yolov8n.pt if the file is missing
+  imgsz: 640
+  conf: 0.35
+  iou: 0.5
+  device: auto                    # auto | cpu | cuda:0
+  classes: [car, motorcycle, bus, truck]
+  tracker: bytetrack.yaml         # bytetrack.yaml | botsort.yaml
+
+speed:
+  mode: simple                    # simple | homography
+  meters_per_pixel: 0.05          # CALIBRATE THIS for your camera (see README)
+  # homography mode: 4 image points (pixels) <-> 4 world points (meters), same order
+  image_points: []                # e.g. [[420,300],[860,300],[1100,700],[180,700]]
+  world_points: []                # e.g. [[0,0],[7,0],[7,30],[0,30]]
+  window: 8                       # frames used for the sliding speed window
+  min_frames: 6                   # ignore speed until a vehicle was seen this long
+  smoothing: 0.4                  # EMA factor (0..1, higher = less smoothing)
+  limit_kmh: 60
+  consecutive_frames: 5           # frames above limit before flagging a violation
+
+ocr:
+  enabled: true
+  languages: [en]
+  every_n_frames: 10
+  min_crop_px: 60
+  min_confidence: 0.30
+
+video:
+  fps_override: null
+  max_frames: null
+  trail_length: 30
+  progress_every: 5

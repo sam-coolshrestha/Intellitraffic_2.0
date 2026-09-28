@@ -1,0 +1,11 @@
+numpy
+opencv-python-headless
+pandas
+pyyaml
+imageio-ffmpeg
+plotly
+matplotlib
+scipy
+streamlit
+pytest
+ruff

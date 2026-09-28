@@ -1,0 +1,19 @@
+# CPU-only PyTorch keeps the install small enough for Streamlit Community Cloud.
+# (Remove the next line if you want the default CUDA build on your own GPU machine.)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+ultralytics>=8.3
+easyocr>=1.7
+opencv-python-headless
+numpy
+pandas
+pyyaml
+plotly
+streamlit>=1.40
+imageio-ffmpeg
+# research scripts
+matplotlib
+scipy
+motmetrics
+scikit-learn
