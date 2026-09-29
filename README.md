@@ -1,4 +1,4 @@
-# 🚦 IntelliTraffic AI
+#  IntelliTraffic AI
 
 AI-powered traffic surveillance and analytics: **YOLOv8 + ByteTrack + EasyOCR + OpenCV + Streamlit**.
 Detects and tracks vehicles, estimates speed, reads licence plates, flags overspeeding, and ships a
@@ -49,7 +49,7 @@ pytest                                                 # tests
 Outputs (in `outputs/`): `final_output.mp4`, `vehicle_records.csv`, `violations.csv`, `trajectories.csv`,
 `speed_timeline.csv`, `trajectory_heatmap.png`, `run_metadata.json`, `snapshots/`.
 
-## ⚠️ Calibrate speed or the numbers are meaningless
+##  Calibrate speed or the numbers are meaningless
 Speed = real distance / time, so the camera must be calibrated.
 - **Simple:** measure a known road length (e.g. a 3 m lane-marking gap) and divide by its length in pixels → `meters_per_pixel`. Only accurate for a roughly top-down view.
 - **Homography (recommended):** pick 4 road-plane points in the image (e.g. lane-line corners) and enter their real-world coordinates in metres. Corrects perspective.
