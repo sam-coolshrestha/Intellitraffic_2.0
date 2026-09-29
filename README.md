@@ -4,7 +4,7 @@ AI-powered traffic surveillance and analytics: **YOLOv8 + ByteTrack + EasyOCR + 
 Detects and tracks vehicles, estimates speed, reads licence plates, flags overspeeding, and ships a
 research toolkit for evaluating each stage.
 
-Live demo: https://intellitraffic-ai.streamlit.app/
+Live demo: https://intellitraffic2.streamlit.app/
 
 ## Features
 - Vehicle detection (car, motorcycle, bus, truck only) with YOLOv8
