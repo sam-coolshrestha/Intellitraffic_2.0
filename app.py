@@ -64,7 +64,7 @@ def load_existing() -> dict | None:
 
 
 # ----------------------------------------------------------------- sidebar
-st.sidebar.title("🚦 IntelliTraffic AI")
+st.sidebar.title("IntelliTraffic AI")
 uploaded = st.sidebar.file_uploader("Upload traffic video", type=["mp4", "avi", "mov", "mkv"])
 
 with st.sidebar.expander("Detection", expanded=True):
